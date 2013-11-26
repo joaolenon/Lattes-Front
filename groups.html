@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Dashboard do Lattes</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/google.jsapi.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app/groups.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Dashboard Lattes</a>
+                <ul class="nav">
+                    <li class="active"><a href="groups.html">Grupos</a></li>
+                    <li><a href="educational.html">Titulação</a></li>
+                    <li><a href="experience.html">Atuação Profissional</a></li>
+                    <li><a href="productions.html">Produções</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <article class="container">
+        <h1>Grupos</h1>
+        <form class="form-horizontal" id="group-form">
+            <legend>Inserir Grupo</legend>
+            <div class="control-group">
+                <label class="control-label" for="group-name">Nome do Grupo:</label>
+                <div class="controls">
+                    <input type="text" id="group-name" name="group-name" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="user-lattes">Lattes:</label>
+                <div class="controls">
+                    <input type="text" id="user-lattes" name="user-lattes" />
+                    <button type="button" class="btn" id="add-user">+</button>
+                </div>
+            </div>
+
+            <table class="table" id="user-list">
+                <thead>
+                    <tr>
+                        <th>Lattes</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn">Salvar</button>
+                </div>
+            </div>
+        </form>
+
+        <h2>Grupos Cadastrados</h2>
+        <table class="table" id="group-list">
+            <thead>
+                <tr>
+                    <th>Grupo</th>
+                    <th>Remover</th>
+                </tr>  
+            </thead>
+            <tbody></tbody>
+        </table>
+    </article>
+</body>
+</html>

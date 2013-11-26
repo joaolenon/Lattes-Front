@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Dashboard do Lattes</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/google.jsapi.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app/experience.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Dashboard Lattes</a>
+                <ul class="nav">
+                    <li><a href="groups.html">Grupos</a></li>
+                    <li><a href="educational.html">Titulação</a></li>
+                    <li class="active"><a href="experience.html">Atuação Profissional</a></li>
+                    <li><a href="productions.html">Produções</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <article class="container">
+        <h1>Atuação Profissional</h1>
+        <form class="form-inline">
+            <fieldset>
+                <legend>Filtros</legend>
+                <label for="input-group">Grupo: </label>
+                <select id="input-group" class="input-small" name="group">
+                </select>
+
+                <button class="btn" type="submit">Filtrar</button>
+            </fieldset>
+        </form>
+
+        <section id="teachers-professional-experience">
+            <div class="accordion" id="accordion">
+                
+            </div>
+        </section>
+    </article>
+</body>
+</html>

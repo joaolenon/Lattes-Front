@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Dashboard do Lattes</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/google.jsapi.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app/productions.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Dashboard Lattes</a>
+                <ul class="nav">
+                    <li><a href="groups.html">Grupos</a></li>
+                    <li><a href="educational.html">Titulação</a></li>
+                    <li><a href="experience.html">Atuação Profissional</a></li>
+                    <li class="active"><a href="productions.html">Produções</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <article class="container">
+        <h1>Produções</h1>
+        <form class="form-inline">
+            <fieldset>
+                <legend>Filtros</legend>
+
+                <label for="input-group">Grupo: </label>
+                <select id="input-group" class="input-small" name="group">
+                </select>
+
+                <label for="input-begin">Início: </label>
+                <input id="input-begin" class="input-small" type="number" min="1900" max="2013" name="begin" value="2010" />
+
+                <label for="input-end">Fim: </label>
+                <input id="input-end" class="input-small" type="number" min="1900" max="2013" name="end" value="2013" />
+
+                <button class="btn" type="submit">Filtrar</button>
+            </fieldset>
+        </form>
+
+        <section id="total-productions">
+            <h2>Total de Produções por Tipo</h2>
+
+            <div class="chart"></div>
+        </section>
+
+
+        <section id="productions">
+            <h2>Produções de <span id="span-begin">2010</span> a <span id="span-end">2013</span></h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="60%">Autor</th>
+                        <th width="20%" style="text-align: center;">Ano</th>
+                        <th width="20%" style="text-align: center;">Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </article>
+</body>
+</html>
