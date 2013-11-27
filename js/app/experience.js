@@ -47,6 +47,10 @@ function drawExperienceTable(data) {
         var professional = '';
 
         for(var j = 0; j < data[i].professional.length; j++) {
+            if (data[i].professional[j].end == 9999) {
+                data[i].professional[j].end = 'Atual';
+            }
+            
             professional += '<p>' + data[i].professional[j].workplace + 
                             ' ' + data[i].professional[j].link  + 
                             ' Início: ' + data[i].professional[j].start +  
